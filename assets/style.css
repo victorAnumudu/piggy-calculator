@@ -11,44 +11,39 @@
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: top -10% left 0, top 0 right -5%, bottom 0 left -5%, bottom 0 right -5%;
+    position: relative;
 }
 .sub-container{
     width: 450px;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.sub-container-anchor, .sub-container-anchor:hover{
-    display: inline-block;
-    width: 100%;
+.input-wrap{
+    border: 2px solid #fff;
+    padding: 5px;
+}
+.header{
     text-align: center;
-    text-emphasis: none;
-    padding: 50px 0;
+    padding: 5px 0;
 }
-.form-container{
-    padding: 40px 30px;
-    background-color: #fff;
-    border-radius: 20px 20px 20px 0;
-}
-.form-header{
-    font-size: 1.5rem;
-    color: #083e9e;
-    text-align: center;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-}
-.form-para{
-    font-size: .875rem;
-    color: #4a5568;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin: 10px 0;
-}
-h2{
+.header span{
     display: block;
-    font-size: 1.5rem;
+    text-align: center;
     color: #fff;
-    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* color: #083e9e;
+color: #4a5568;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; */
+h2{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1rem;
     margin-bottom: .25rem;
-    font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
 input{
@@ -63,7 +58,8 @@ input{
     font-family: 'Roboto', sans-serif;
 }
 input::placeholder{
-    color: #b7b7c0;
+    color: #000;
+    font-style: italic;
 }
 select{
     width: 100%;
@@ -78,39 +74,43 @@ select{
     color: #2c2c2c;
     font-family: 'Roboto', sans-serif;
 }
-select:focus{
-    border: 1px solid #103e8d;
-}
 select option{ 
     font-size: inherit;
-    color: #909094;
+    color: #000;
 }
 select option:first-child{
-  background-color: #649dff;
-}
-.calculate{
-    width: 100%;
-    padding: 1rem;
-    height: 60px;
-    color: #fff;
-    font-weight: 700;
-    margin-top: 2rem;
-    border-radius: 10px 10px 10px 0;
-    background-color: #083e9e;
-    font-size: 1.5rem;
-    border: none;
-    font-family: 'Roboto', sans-serif;
+  background-color: #fff;
 }
 #calculate{
     display: flex;
     padding: 10px 20px;
     background-color: darkgreen;
-    margin: auto;
+    margin: 10px auto;
+    color: #fff;
+    border-radius: 10px 10px 10px 0;
+    background-color: #083e9e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+#calculate:hover{
+    background-color: #02245f;
+}
+#calculate:active{
+    background-color: #01112c;
 }
 @media all and (max-width:500px){
     .sub-container{
         width: 90%;
         margin: auto;
         overflow: hidden;
+    }
+    .over-all-container{
+        background-position: top 0% left 0, top 0 right 0, bottom 0 left 0, bottom 0 right 0;
+    }
+    .header img{
+        width: 50vw;
+    }
+    h2{
+        font-size: 14px;
     }
 }
