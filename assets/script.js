@@ -92,7 +92,7 @@ let getInterest = () => {
     } else if(myAmount.value == "" || myAmount.value == "0"){
         alert("please put an amount");
     } else if(payBackDate.value == "") {
-        alert("please select pay back date");
+        alert("please duration and pay back date");
     } else{
         switch(durationSelected) {
             case "null":
