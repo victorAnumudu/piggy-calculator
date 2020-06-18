@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.over-all-container{
+    background-color: rgb(6, 40, 99);
+    height: 100vh;
+    overflow-y: auto;
+    background-image: url(../images/o.png), url(../images/g.png), url(../images/d.png), url(../images/a.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: top -10% left 0, top 0 right -5%, bottom 0 left -5%, bottom 0 right -5%;
+}
+.sub-container{
+    width: 450px;
+    margin: auto;
+}
+.sub-container-anchor, .sub-container-anchor:hover{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-emphasis: none;
+    padding: 50px 0;
+}
+.form-container{
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 0;
+}
+.form-header{
+    font-size: 1.5rem;
+    color: #083e9e;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.form-para{
+    font-size: .875rem;
+    color: #4a5568;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+h2{
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: .25rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    width: 100%;
+    padding: 1rem;
+    height: 60px;
+    color: #1a202c;
+    border-radius: .25rem;
+    background-color: #edf2f7;
+    font-size: 100%;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+input::placeholder{
+    color: #b7b7c0;
+}
+select{
+    width: 100%;
+    padding: 1rem;
+    height: 60px;
+    color: #1a202c;
+    border-radius: .25rem;
+    background-color: #edf2f7;
+    font-size: 100%;
+    border: none;
+    font-size: inherit;
+    color: #2c2c2c;
+    font-family: 'Roboto', sans-serif;
+}
+select:focus{
+    border: 1px solid #103e8d;
+}
+select option{ 
+    font-size: inherit;
+    color: #909094;
+}
+select option:first-child{
+  background-color: #649dff;
+}
+.calculate{
+    width: 100%;
+    padding: 1rem;
+    height: 60px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 2rem;
+    border-radius: 10px 10px 10px 0;
+    background-color: #083e9e;
+    font-size: 1.5rem;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+#calculate{
+    display: flex;
+    padding: 10px 20px;
+    background-color: darkgreen;
+    margin: auto;
+}
+@media all and (max-width:500px){
+    .sub-container{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+}
