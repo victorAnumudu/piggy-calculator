@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyVest | Calculator</title>
+    <link rel="icon" href="images/piggybank.webp" type="x/icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="over-all-container">
+        <div class="sub-container">
+
+            <a href="" class="sub-container-anchor"><img src="images/piggyvest-logo.0b78a8fa.svg" alt="PiggyLogo"></a>
+
+            
+            <div class="sub-container">
+                <h2>Enter an amount</h2>
+                <input id="amount" type="text" placeholder="enter an amount">
+        
+                <h2>Select Duration</h2>
+                <select name="" id="Duration">
+                    <option value="null">select-option</option>
+                    <option value="30">10 - 30 days</option>
+                    <option value="60">31 - 60 days</option>
+                    <option value="90">61 - 90 days</option>
+                    <option value="91">91 - 2 years</option>
+                    <option value="2 years+">2 years plus</option>
+                </select>
+        
+                <h2>Select pay back date</h2>
+                <select name="" id="pay-back-date"></select>
+        
+                <h2>Your money plus you Interest is:</h2>
+                <input id="interest" type="text" placeholder="your interest" disabled>
+            </div>
+            <button id="calculate">Calculate</button>
+        </div>
+    </div>
+    
+    <script src="assets/script.js"></script>
+</body>
+</html>
